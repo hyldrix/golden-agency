@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,33 @@
     <link rel="stylesheet" href="vendor/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <nav class="container">
-        <div class="row">
-            <div class="logo col-4">Golden</div>
-            <div class="menu col-8">
-                <ul class="nav-list">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
+    <nav id="home" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="logo col-5"><a href="#">Golden</a></div>
+                <div class="menu col-7">
+                    <ul class="nav-list">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </nav>
 
+    </nav>
+    <section class="splash container-fluid">
+        <div class="image-container"><img src="/images/background-image.png" alt="background-image"></div>
+        <div class="container text-container">
+            <h2>Welcome To Our Studio!</h2>
+            <h1>It's nice to meet you</h1>
+            <a class="btn" href="#">Tell me more</a>
+        </div>
+    </section>
 </body>
+
 </html>

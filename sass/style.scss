@@ -1,0 +1,19 @@
+@import url('https://fonts.cdnfonts.com/css/wisdom-script');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+$logo-font:'Wisdom Script', sans-serif;
+$navi-font: 'Montserrat', sans-serif;
+
+.logo {
+    font-family: $logo-font;
+    font-size: 30px;
+}
+.nav-list li{
+    font-family: $navi-font;
+    display: inline;
+    padding: 15px 15px;
+    a {
+        text-decoration: none;
+        ;
+    }
+}

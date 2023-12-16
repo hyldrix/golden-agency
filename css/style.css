@@ -1,0 +1,17 @@
+@import url("https://fonts.cdnfonts.com/css/wisdom-script");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+.logo {
+  font-family: "Wisdom Script", sans-serif;
+  font-size: 30px;
+}
+
+.nav-list li {
+  font-family: "Montserrat", sans-serif;
+  display: inline;
+  padding: 15px 15px;
+}
+.nav-list li a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBUSwyREFBQTtBQUNBLGtFQUFBO0FBS1I7RUFDSSx3Q0FKTztFQUtQLGVBQUE7QUNISjs7QURLQTtFQUNJLHFDQVBRO0VBUVIsZUFBQTtFQUNBLGtCQUFBO0FDRko7QURHSTtFQUNJLHFCQUFBO0FDRFIiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

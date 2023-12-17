@@ -116,8 +116,9 @@ section.splash {
   }
 
   > .section-header {
-    margin-top: 150px;
-    margin-bottom: 10px;
+    margin: 0;
+    padding-top: 150px;
+    padding-bottom: 5px;
 
     font-family: $navi-font;
     text-transform: uppercase;
@@ -125,21 +126,21 @@ section.splash {
     font-weight: 700;
     font-size: 50px;
   }
+  > .row {
+    padding-bottom: 150px;
+  }
 
   > .section-description {
-    margin-top: 10px;
     color: gray;
     font-weight: 500;
   }
 
   .row {
-    margin-top: 100px;
-    .col-4 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-left: 15px;
-        padding-right: 15px;
+    padding-top: 100px;
+    .element-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       .img-container {
         width: 50px;
@@ -161,22 +162,55 @@ section.splash {
 
       .text-container {
         display: block;
-        text-align:center;
-      
-        
-        margin-top: 15px;
+        text-align: center;
+
         .service-title {
           font-family: $navi-font;
-        
         }
         .service-description {
           font-family: $font-roboto;
           font-weight: 400;
-          color: gray
-        }        
-
-    
+          color: gray;
+        }
       }
     }
   }
 }
+
+/*Portfolio*/
+
+.portfolio {
+  background-color: #f7f7f7;
+
+  .portfolio-element {
+    .card {
+      width: 300px;
+      height: 400px;
+      background-color: #ffffff;
+      margin-bottom: 60px;
+      img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+      .text-container{
+        text-align: center;
+
+        .product-title {
+          font-family: $navi-font;
+          margin-bottom: 0;
+        }
+        .product-description {
+          margin-top: 0;
+          color: gray;
+        }
+
+
+      }
+  
+    }
+   
+  }
+}
+
+/*Footer*/

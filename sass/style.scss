@@ -28,38 +28,38 @@ a {
 
 /*Navigation*/
 
-nav {
+nav.container-fluid {
   z-index: 2;
   position: absolute;
   top: 0;
-  margin: 0;
-  padding-top: 30px;
-  .container {
-    margin: 0 auto;
+  margin: 0 auto;
+  padding-top: 50px;
 
-    .logo {
-      display: inline-flex;
-      align-items: center;
-      a {
-        font-family: $logo-font;
-        font-size: 40px;
-        color: $logo-color;
-        letter-spacing: 3px;
-      }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      font-family: $logo-font;
+      font-size: 40px;
+      color: $logo-color;
+      letter-spacing: 3px;
     }
+  }
 
-    .nav-list {
-      display: flex;
-      justify-content: space-between;
+  .nav-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-left: 0;
 
-      li {
-        list-style: none;
-        a {
-          font-family: $navi-font;
-          font-size: 20px;
-          font-weight: 500;
-          color: #ffffff;
-        }
+    li {
+      list-style: none;
+      a {
+        font-family: $navi-font;
+        font-size: 20px;
+        font-weight: 500;
+        color: #ffffff;
       }
     }
   }
@@ -93,6 +93,7 @@ section.splash {
       font-family: $navi-font;
       text-transform: uppercase;
       font-size: 70px;
+      margin-bottom: 50px;
     }
 
     .btn {
@@ -113,6 +114,7 @@ section.splash {
   > .section-header,
   > .section-description {
     text-align: center;
+    align-content: flex-start;
   }
 
   > .section-header {
@@ -152,7 +154,6 @@ section.splash {
 
       .img-container::after {
         content: '';
-
         width: 70px;
         height: 70px;
         border: 3px #fed136 solid;
@@ -182,7 +183,14 @@ section.splash {
 .portfolio {
   background-color: #f7f7f7;
 
+  .row {
+    display: flex;
+    margin: 0 auto;
+  }
+
   .portfolio-element {
+    display: flex;
+    justify-content: center;
     .card {
       width: 300px;
       height: 400px;
@@ -193,7 +201,13 @@ section.splash {
         height: 300px;
         object-fit: cover;
       }
-      .text-container{
+
+      .element-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .text-container {
         text-align: center;
 
         .product-title {
@@ -204,13 +218,125 @@ section.splash {
           margin-top: 0;
           color: gray;
         }
-
-
       }
-  
     }
-   
   }
 }
 
 /*Footer*/
+
+footer {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    p {
+      font-family: $navi-font;
+      font-size: 14px;
+      color: gray;
+      left: 0;
+    }
+  }
+  ul.social-media {
+    padding-top: 25px;
+    padding: 0;
+    text-align: center;
+    margin: 48px auto;
+
+    li {
+      padding: 0 10px 0 10 px;
+      list-style: none;
+      display: inline;
+      text-align: center;
+
+      a {
+        font-size: 0;
+      }
+
+      i {
+        font-size: 20px;
+        background: black;
+        width: 45px;
+        height: 45px;
+        color: white;
+        line-height: 45px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  nav {
+    .row .nav-list {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+      li {
+        background-color: rgba(0, 0, 0, 0.409);
+      }
+    }
+  }
+  section.splash {
+    .text-container {
+      h2,
+      h1 {
+        font-size: 35px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+
+  .container {
+ 
+    > .section-header {
+      margin: 0;
+      padding-top: 50px;
+
+      font-family: $navi-font;
+      text-transform: uppercase;
+
+      font-weight: 700;
+      font-size: 40px;
+    }
+    > .row {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+
+    > .section-description {
+      color: gray;
+      font-weight: 500;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .logo {
+    margin-top: 20px;
+  }
+
+  section.splash .text-container h1 {
+    font-size: 20px;
+  }
+
+  nav {
+    .row .nav-list {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    p {
+      position: relative;
+    }
+  }
+}
